@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  
+  <title>Site touristique de Bobo Dioulasso</title>
+  
+</head>
+<body>
+
+  <div id="header">
+<h1><span class="cercle">Sites touristiques de Bobo-Dioulasso❤️.</span></h1>
+<img src="image.jpg">
+   </div>
+      <ul id="nav">
+        <li><a href="Accueil.html">Accueil</a></li>
+        <li><a href="Patrimoine.html">Patrimoine</a></li>
+        <li><a href="Reservation.html">Réservation d'hôtel</a></li>
+        <li><a href="Galerie.html">Galerie</a></li>
+      </ul>
+
+<section class="apropos">
+<h2>À propos de la ville</h2>
+  <img src="R.jpeg">
+  <p>Fondée en 1897, Bobo-Dioulasso est la deuxième ville du Burkina Faso 
+  et le cœur battant de la région des Hauts-Bassins. Lovée entre les cours 
+  d'eau d'Houet et du Kou, elle mêle architecture coloniale, mosquées en 
+  banco et marchés colorés dans une atmosphère unique en Afrique de l'Ouest. 
+  Son nom, issu du dioula, signifie littéralement <em>« chez les Bobo et 
+  les Dioula »</em>, deux peuples fondateurs qui ont forgé son identité 
+  plurielle. Avec ses 1,5 million d'habitants, la ville est un melting-pot 
+  de cultures, de langues et de religions qui cohabitent dans une paix 
+  remarquable. Son climat tropical, ses espaces verts et ses cours d'eau 
+  lui valent le surnom de <strong>« ville la plus agréable du Burkina »</strong>.</p>
+</div>
+
+<section class="apropos">
+  <img src="armoiries-Bobo-1.jpg" style=>
+  <p>Surnommée <strong>« Bobo »</strong> par ses habitants, la ville est 
+  reconnue pour sa tolérance inter-religieuse, sa scène artistique 
+  foisonnante et son artisanat de renom. Chaque ruelle du vieux quartier 
+  de <em>Dioulassoba</em> invite à une plongée dans un patrimoine vivant, 
+  transmis de génération en génération. Ses marchés animés regorgent 
+  d'épices, de tissus <em>bogolan</em> et d'objets artisanaux fabriqués 
+  à la main. La ville accueille chaque année le <strong>SIAO</strong>, 
+  le plus grand salon de l'artisanat africain, attirant des exposants et 
+  visiteurs du monde entier. Bobo est aussi une ville universitaire 
+  dynamique, berceau d'une jeunesse créative qui dessine l'avenir du 
+  Burkina Faso.</p>
+</div>
+<footer>
+<p> &copy; 2026 Patrimoine de <span>Bobo-Dioulasso</span>&copy; DIALLO ADAMA(N00354820251) & GUIRE BABA ELIE(N00246020241) & OUEDRAOGO MAHAMADI(N00058820251)& OUEDRAOGO R.N.Ghislaine (N00482820252)</p>
+</footer>
+<style>
+body {
+  background-color: #ffffff;
+  color: #1a1a1a;
+  font-family: 'Lato', sans-serif;
+  min-height: 100vh;
+}
+
+#header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px 30px;
+  background-color: #ffffff;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+#header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.2rem, 3vw, 2rem);
+  text-align: center;
+  color: #1a1a1a;
+  letter-spacing: 0.04em;
+  margin-bottom: 24px;
+}
+
+
+#header h1 .cercle {
+  display: inline-block;
+  border: 4px solid #2e7d32;
+  border-radius: 50%;
+  padding: 18px 32px;
+  line-height: 1.3;
+  box-shadow: 0 0 0 6px rgba(46, 125, 50, 0.12);
+}
+
+#header img {
+  width: 100%;
+  max-width: 900px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-top: 10px;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.13);
+}
+
+
+#nav {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px 28px;
+  padding: 22px 20px;
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #ddd;
+}
+
+#nav li a {
+  text-decoration: none;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #2e7d32;
+  padding: 7px 18px;
+  border: 2px solid #2e7d32;
+  border-radius: 3px;
+  transition: background 0.2s, color 0.2s;
+}
+
+#nav li a:hover {
+  background-color: #2e7d32;
+  color: #ffffff;
+}
+h2 {
+  text-align: center;
+  color: green;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+
+}
+
+
+.apropos {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.apropos img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.apropos p {
+  font-family: 'Arial', sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  text-align: justify;
+}
+footer{
+  color: #2e7d32;
+  background-color: #1a1a1a;
+  color: #cccccc;
+  text-align: center;
+  padding: 22px 16px;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
+  margin-top: 20px;
+}
+
+footer p {
+  color: #bbbbbb;
+}
+
+footer p span {
+  font-weight: 700;
+}
+
+</style>
+
+</body>
+</html>

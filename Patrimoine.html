@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=divice, initial-scale=1.0">
+<title>Patrimoine de Bobo-Dioulasso</title>
+<Link href="https:.//fonts.googleapis.com/css2?family=playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stysheet">
+<style>
+#header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px 30px;
+  background-color: #ffffff;
+  border-bottom: 2px solid #e0e0e0;
+}
+#header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.2rem, 3vw, 2rem);
+  text-align: center;
+  color: black;
+  letter-spacing: 0.04em;
+  margin-bottom: 24px;
+}
+
+
+#header h1 .cercle {
+  display: inline-block;
+  border: 4px solid #2e7d32;
+  border-radius: 50%;
+  padding: 18px 32px;
+  line-height: 1.3;
+  box-shadow: 0 0 0 6px rgba(46, 125, 50, 0.12);
+}
+    :root {
+        --or: #C8922A;
+        --or-clair:#E8B84B;
+        --vert: #006633;
+        --vert-fonce: #004422;
+        --creme: #FAF6EE;
+        --texte: #1A1208;
+        --gris: #8A7A6A;
+    }
+    
+    }
+    
+    .divider {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      margin: 28px auto 0;
+      color: var(--or);
+    }
+    .divider::before,
+    .divider::after {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 1px;
+      background: var(--or);
+      opacity: .5;
+    }
+   #nav {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px 28px;
+  padding: 22px 20px;
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #ddd;
+}
+
+#nav li a {
+  text-decoration: none;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #2e7d32;
+  padding: 7px 18px;
+  border: 2px solid #2e7d32;
+  border-radius: 3px;
+  transition: background 0.2s, color 0.2s;
+}
+
+#nav li a:hover {
+  background-color: #2e7d32;
+  color: #ffffff;
+}               
+
+
+    main {
+      max-width: 1160px;
+      margin: 0 auto;
+      padding: 60px 20px 80px;
+    }
+    .section-titre {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.1rem;
+      color: var(--vert);
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      margin-bottom: 36px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    .section-titre::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: linear-gradient(to right, var(--or), transparent);
+    }
+    .grille {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 28px;
+    }
+   
+    .carte {
+      background: #fff;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,.06);
+      transition: transform .35s cubic-bezier(.22,1,.36,1),
+                  box-shadow .35s ease;
+      animation: montee .6s ease both;
+    }
+    .carte:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(0,0,0,.12);
+    }
+    .carte:nth-child(1)  { animation-delay: .05s; }
+    .carte:nth-child(2)  { animation-delay: .10s; }
+    .carte:nth-child(3)  { animation-delay: .15s; }
+    .carte:nth-child(4)  { animation-delay: .20s; }
+    .carte:nth-child(5)  { animation-delay: .25s; }
+    .carte:nth-child(6)  { animation-delay: .30s; }
+    .carte:nth-child(7)  { animation-delay: .35s; }
+    @keyframes montee {
+      from { opacity: 0; transform: translateY(30px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    /* image placeholder coloré par site */
+    .carte-image {
+      position: relative;
+      width: 100%;
+      height: 200px;
+      overflow: hidden;
+    }
+    .carte-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform .5s ease;
+      display: block;
+    }
+    .carte:hover .carte-image img { transform: scale(1.08); }
+    /* fallback si image absente */
+    .carte-image .placeholder {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3.5rem;
+    }
+    .c1 .placeholder { background: linear-gradient(135deg,#1a472a,#2d7a4f); }
+    .c2 .placeholder { background: linear-gradient(135deg,#1a3a5c,#2d6a9f); }
+    .c3 .placeholder { background: linear-gradient(135deg,#5c3a1a,#9f6a2d); }
+    .c4 .placeholder { background: linear-gradient(135deg,#3a1a5c,#7a2d9f); }
+    .c5 .placeholder { background: linear-gradient(135deg,#5c1a1a,#9f2d2d); }
+    .c6 .placeholder { background: linear-gradient(135deg,#1a5c3a,#2d9f6a); }
+    .c7 .placeholder { background: linear-gradient(135deg,#5c5a1a,#9f9d2d); }
+    /* étiquette catégorie */
+    .tag {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      background: rgba(0,0,0,.55);
+      backdrop-filter: blur(6px);
+      color: #fff;
+      font-size: .68rem;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      padding: 4px 10px;
+      border-radius: 100px;
+    }
+    .carte-corps {
+      padding: 20px 22px 22px;
+    }
+    .carte-corps h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--texte);
+      margin-bottom: 8px;
+      line-height: 1.35;
+    }
+    .carte-corps p {
+      font-size: .83rem;
+      color: var(--gris);
+      line-height: 1.6;
+      margin-bottom: 18px;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--vert);
+      color: #fff;
+      text-decoration: none;
+      font-size: .82rem;
+      font-weight: 500;
+      padding: 9px 18px;
+      border-radius: 8px;
+      transition: background .2s, gap .2s;
+    }
+    .btn:hover { background: var(--vert-fonce); gap: 12px; }
+    .btn svg { width: 14px; height: 14px; }
+    /* ── FOOTER ── */
+    footer {
+       background-color: #1a1a1a;
+  color: #cccccc;
+  text-align: center;
+  padding: 22px 16px;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
+  margin-top: 20px;
+    }
+    footer span { color: var(--or); }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <div class="badge">🇧🇫 Burkina Faso</div>
+      <div id="header">
+      <h1><span class="cercle">Sites Patrimoniaux de Bobo-Dioulasso.</span></h1></div>
+      <p>Découvrez les trésors culturels, historiques et naturels de la deuxième ville du Burkina Faso.</p>
+      <div class="divider">✦</div>
+    </div>
+  </header>
+  <main>
+    <p class="section-titre">Nos Sites</p>
+    <div class="grille">
+      <!-- Carte 1 -->
+      <div class="carte c1">
+        <div class="carte-image">
+          <img src="Mosquee.jpg" alt="Grande Mosquée" onerror="this.style.display='none'">
+          <span class="tag">Religion</span>
+        </div>
+        <div class="carte-corps">
+          <h2>Grande Mosquée de Bobo-Dioulasso</h2>
+          <p>Un chef-d'œuvre de l'architecture soudano-sahélienne, symbole spirituel de la ville.</p>
+          <a href="Mosquee.html" class="btn">Découvrir <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+      </div>
+      <!-- Carte 2 -->
+      <div class="carte c2">
+        <div class="carte-image">
+          <img src="Silures sacrés.jpg" alt="Silures Sacrés" onerror="this.style.display='none'">
+          <span class="tag">Nature & Mystique</span>
+        </div>
+        <div class="carte-corps">
+          <h2>Silures Sacrés de Dafra</h2>
+          <p>Les poissons-chats sacrés du marigot de Dafra, gardiens d'une tradition ancestrale.</p>
+          <a href="Silures sacrés.html" class="btn">Découvrir <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+      </div>
+      <!-- Carte 3 -->
+      <div class="carte c3">
+        <div class="carte-image">
+          <img src="Mussée communal Sogossira Sanou.jpg" alt="Musée Sogossira Sanou" onerror="this.style.display='none'">
+          <span class="tag">Culture</span>
+        </div>
+        <div class="carte-corps">
+          <h2>Musée Communal Sogossira Sanou</h2>
+          <p>Un musée qui préserve et valorise le patrimoine matériel et immatériel de la région.</p>
+          <a href="Mussée communal Sogossira Sanou.html" class="btn">Découvrir <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+      </div>
+      <!-- Carte 4 -->
+      <div class="carte c4">
+        <div class="carte-image">
+          <img src="Maison de la culture de Bobo-Dioulasso.jpg" alt="Maison de la Culture" onerror="this.style.display='none'">
+          <span class="tag">Arts</span>
+        </div>
+        <div class="carte-corps">
+          <h2>Maison de la Culture de Bobo-Dioulasso</h2>
+          <p>Le cœur vibrant des arts et de la création culturelle de Bobo-Dioulasso.</p>
+          <a href="Maison de la culture de Bobo-Dioulasso.html" class="btn">Découvrir <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+      </div>
+      <!-- Carte 5 -->
+      <div class="carte c5">
+        <div class="carte-image">
+          <img src="La foret du kou.jpg" alt="Forêt du Kou" onerror="this.style.display='none'">
+          <span class="tag">Nature</span>
+        </div>
+        <div class="carte-corps">
+          <h2>La Forêt du Kou (Guinguette)</h2>
+          <p>Une oasis verdoyante aux abords de la ville, idéale pour la détente et l'écotourisme.</p>
+          <a href="La foret du kou.html" class="btn">Découvrir <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+      </div>
+      <!-- Carte 6 -->
+      <div class="carte c6">
+        <div class="carte-image">
+          <img src="Le mausolée de Guimbi Ouattara.jpg" alt="Mausolée Guimbi Ouattara" onerror="this.style.display='none'">
+          <span class="tag">Histoire</span>
+        </div>
+        <div class="carte-corps">
+          <h2>Mausolée de Guimbi Ouattara</h2>
+          <p>Le mémorial de la reine Guimbi Ouattara, figure légendaire de l'histoire de Bobo.</p>
+          <a href="Le mausolée de Guimbi Ouattara.html" class="btn">Découvrir <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+      </div>
+      <!-- Carte 7 -->
+      <div class="carte c7">
+        <div class="carte-image">
+          <img src="Place de la Femme.jpg" alt="Place de la Femme" onerror="this.style.display='none'">
+          <span class="tag">Monument</span>
+        </div>
+        <div class="carte-corps">
+          <h2>Place de la Femme de Bobo-Dioulasso</h2>
+          <p>Un espace symbolique dédié à la femme burkinabè, pilier de la société et de la culture.</p>
+          <a href="Place de la Femme.html" class="btn">Découvrir <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+      </div>
+<div class="carte c8">
+        <div class="carte-image">
+          <img src="Gare ferroviaire.jpg" alt="Gare ferroviaire" onerror="this.style.display='none'">
+          <span class="tag">Patrimoine</span>
+        </div>
+        <div class="carte-corps">
+          <h2>Gare Ferroviaire de Bobo-Dioulasso</h2>
+          <p>Un bâtiment colonial emblématique, témoin de l'histoire du chemin de fer en Afrique de l'Ouest.</p>
+          <a href="Gare ferroviaire.html" class="btn">Découvrir <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+      </div>
+      <!-- Carte 9 : Village Artisanal -->
+      <div class="carte c9">
+        <div class="carte-image">
+          <img src="Village Artisanal de bobo.jpg" alt="Village artisanal" onerror="this.style.display='none'">
+          <span class="tag">Artisanat</span>
+        </div>
+        <div class="carte-corps">
+          <h2>Village Artisanal</h2>
+          <p>Un espace vivant où les artisans burkinabè perpétuent les savoir-faire traditionnels : tissage, sculpture, poterie.</p>
+          <a href="Village Artisanal de Bobo.html" class="btn">Découvrir <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+      </div>
+      <!-- Carte 10 : Musée de la musique -->
+      <div class="carte c10">
+        <div class="carte-image">
+          <img src="Musée de la musique.jpg" alt="Musée de la musique" onerror="this.style.display='none'">
+          <span class="tag">Musique</span>
+        </div>
+        <div class="carte-corps">
+          <h2>Musée de la Musique</h2>
+          <p>Une collection unique d'instruments traditionnels africains qui retrace l'histoire musicale du Burkina Faso.</p>
+          <a href="Musée de la musique.html" class="btn">Découvrir <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+      </div>
+      <!-- Carte 11 : Marché central -->
+      <div class="carte c11">
+        <div class="carte-image">
+          <img src="Marché central.JPG" alt="Marché central" onerror="this.style.display='none'">
+          <span class="tag">Commerce</span>
+        </div>
+        <div class="carte-corps">
+          <h2>Marché Central de Bobo-Dioulasso</h2>
+          <p>Le poumon économique de la ville, un lieu coloré et animé où se mêlent cultures, saveurs et traditions.</p>
+          <a href="Marché central.html" class="btn">Découvrir <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+      </div>
+      <!-- Carte 12 : Cathédrale -->
+      <div class="carte c12">
+        <div class="carte-image">
+          <img src="Cathédrale.jpg" alt="Cathédrale" onerror="this.style.display='none'">
+          <span class="tag">Religion</span>
+        </div>
+        <div class="carte-corps">
+          <h2>Cathédrale de Bobo-Dioulasso</h2>
+          <p>Un monument religieux imposant, symbole du patrimoine chrétien et de l'architecture coloniale de la ville.</p>
+          <a href="Cathédrale.html" class="btn">Découvrir <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+</div>
+    </div>
+  </main>
+  
+  <ul id="nav">
+               <li><a href="Accueil.html">Accueil</a></li>
+               <li><a href="Galerie.html">Galerie</a></li>
+               <li><a href="reservation.html">Réservation d'hôtels</a></li>
+               <li><a href="Page d'accueil.html">Page d'accueil</a></li>
+        </ul>
+<footer>
+    <p> &copy; 2026 Patrimoine de <span>Bobo-Dioulasso</span>&copy; DIALLO ADAMA & GUIRE BABA ELIE  & OUEDRAOGO MAHAMADI & OUEDRAOGO R.N.Ghislaine</p>
+
+  </footer>
+</body>
+</html
